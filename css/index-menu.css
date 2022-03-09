@@ -283,7 +283,7 @@ h1 {
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 1080px) {
+@media (max-width: 810px) {
 
     .dv-header {
         height: 100vh;

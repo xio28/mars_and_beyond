@@ -235,7 +235,7 @@ input[type="submit"]:hover {
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 1080px) {
+@media (max-width: 810px) {
 
     .nav-dk {
         display: none;

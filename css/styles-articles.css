@@ -112,7 +112,7 @@ figcaption, p, a, span {
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 1080px) {
+@media (max-width: 810px) {
     
     .article h2 {
         font-size: 2em;
