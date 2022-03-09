@@ -241,7 +241,7 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1080px) {
 
     .slider > div {
         padding: 2%;

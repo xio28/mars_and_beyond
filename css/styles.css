@@ -380,7 +380,7 @@ input, textarea {
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 810px) {
+@media (max-width: 1080px) {
     
     .content-title {
         padding: 5vmin;

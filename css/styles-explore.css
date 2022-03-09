@@ -292,7 +292,7 @@
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 810px) {
+@media (max-width: 1080px) {
 
     #blog-content .content {
         padding: 5vmin;
