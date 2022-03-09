@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/index-menu.css">
+        <link rel="stylesheet" href="css/styles-carousel.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="resources/img/favicon.ico">
+        <script src="https://kit.fontawesome.com/553787d9a7.js" crossorigin="anonymous"></script>
+        <title>Mars and Beyond</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header dv-header">
+                <h1>MARS <br>AND <br>BEYOND</h1>
+                <video id="video-header" autoplay loop muted poster="resources/img/poster.jpg">
+                    <source src="resources/videos/space.mp4" type="video/mp4">
+                </video>
+                <div class="menu menu-dv">
+                    <a class="icon" href="#">
+                        <img class="logo" src="resources/img/solar-system.png" alt="logo">
+                    </a>
+                    <ul class="nav-dk">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a id="dk-dropdown" href="#">Explora</a>
+                            <ul id="submenu-1">
+                                <li><a href="pages/solarsystem.html">Sistema Solar</a></li>
+                                <li><a href="pages/tomars.html">Humanos en Marte</a></li>
+                                <li><a href="pages/earth.html">La Tierra</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/media.html">Media</a></li>
+                        <li><a href="pages/contact.html">Contacto</a></li>
+                    </ul>
+                    <div class="nav-dv">
+                        <input class="ck-dv" type="checkbox" />
+                        <div class="ham-menu index-ham-menu"></div>
+                        <div id="dv-hidden-menu">
+                            <ul class="nav-dv-menu">
+                                <li><a href="#">Inicio</a></li>
+                                <li class="submenu-arrow"><input class="submenu-ckb" type="checkbox"><a id="dv-dropdown" href="#">Explora</a><span class="arrow-img"></span>
+                                    <ul id="submenu-2">
+                                        <li><a href="pages/solarsystem.html">Sistema Solar</a></li>
+                                        <li><a href="pages/tomars.html">Humanos en Marte</a></li>
+                                        <li><a href="pages/earth.html">La Tierra</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="pages/media.html">Media</a></li>
+                                <li><a href="pages/contact.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="know-w">
+                    <blockquote>Sabías que el Sistema Solar tarda <span>200 millones de años</span> en completar una vuelta a la Vía Láctea.</blockquote>
+                </div>
+                <div id="about-us">
+                    <div class="left-content">
+                        <h2 class="section-title">¿Quiénes somos?</h2>
+                        <h4 class="subsection-title">Nuetra historia</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam tempore voluptatibus quo nam tenetur aspernatur aliquid iure incidunt optio laudantium eveniet a aperiam, fugiat voluptas eos quis voluptatem hic error.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius sapiente, cum provident tenetur est fuga, blanditiis eum numquam.</p>
+                    </div>
+                    <div class="right-content"></div>
+                </div>
+                <div id="curiosity">
+                    <h2 class="section-title">Vídeo de presentación</h2>
+                    <iframe class="iframe-responsive" src="https://www.youtube.com/embed/BoYpQrZcC3Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="gallery">
+                    <div class="gallery-elements">
+                        <input id="sldr-1" name="slider" class="sld-rad-1" type="radio" checked>
+                        <input id="sldr-2" name="slider" class="sld-rad-2" type="radio">
+                        <input id="sldr-3" name="slider" class="sld-rad-3" type="radio">
+                        <div class="sld-pagination">
+                            <label for="sldr-1" class="pg-1"></label>
+                            <label for="sldr-2" class="pg-2"></label>
+                            <label for="sldr-3" class="pg-3"></label>
+                        </div>
+                        <div class="right arrow">
+                            <label for="sldr-1" class="arrow-1"><img src="resources/img/next.png" alt="right arrow"></label>
+                            <label for="sldr-2" class="arrow-2"><img src="resources/img/next.png" alt="right arrow"></label>
+                            <label for="sldr-3" class="arrow-3"><img src="resources/img/next.png" alt="right arrow"></label>
+                        </div>
+                        <div class="left arrow">
+                            <label for="sldr-1" class="arrow-1"><img src="resources/img/previous.png" alt="left arrow"></label>
+                            <label for="sldr-2" class="arrow-2"><img src="resources/img/previous.png" alt="left arrow"></label>
+                            <label for="sldr-3" class="arrow-3"><img src="resources/img/previous.png" alt="left arrow"></label>
+                        </div>
+                        <div class="slider sld1">
+                            <div>
+                                <h2 class="section-title">Sistema Solar y más allá</h2>
+                                <p>En esta sección te mantendremos informado de lo que respecta a nuestro sistema y a otros más allá: últimos exoplanetas (posiblemente habitables) descubiertos, vida alienígena, recursos, etc.</p>
+                                <a href="pages/solarsystem.html">Ir la sección</a>
+                            </div>
+                        </div>
+                        <div class="slider sld2">
+                            <div>
+                                <h2 class="section-title">Humanos en Marte</h2>
+                                <p>En esta sección aprenderás un poco más sobre la misión que llevará a los humanos a Marte, empezando por la vuelta a la Luna, en 2024.</p>
+                                <a href="pages/solarsystem.html">Ir la sección</a>
+                            </div>
+                        </div>
+                        <div class="slider sld3">
+                            <div>
+                                <h2 class="section-title">La Tierra</h2>
+                                <p>Últimas noticias sobre el cambio climático, expediciones o los últimos avances para tratar de eliminar el plástico en nuestros océanos, entra aquí y descúbrelo.</p>
+                                <a href="pages/solarsystem.html">Ir la sección</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="newsletter">
+                    <div>
+                        <h2 class="section-title">Suscríbete a nuestra newsletter</h2>
+                        <p>Al suscribirte a nuestra newsletter no perderás detalle de las últimas noticias relacionadas con la astronomía; además, te mantendremos al tanto de los próximas ferias o eventos que te puedan interesar.</p>
+                        <form action="https://www.iesanaluisabenitez.org" method="POST">
+                            <input type="email" placeholder="Introduce tu email..." required>
+                            <input type="submit" value="Suscribirse">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="rights">
+                    <p>Copyright &copy; Mars and Beyond</p>
+                    <a target="_blank" href="#">Política de privacidad</a>
+                    <a target="_blank" href="#">Términos de uso</a>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://twitter.com/?lang=es">
+                        <img src="resources/img/twitter.png" alt="twitter">
+                    </a>
+                    <a target="_blank" href="https://es-es.facebook.com/">
+                        <img src="resources/img/facebook.png" alt="facebook">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/?hl=es">
+                        <img src="resources/img/instagram.png" alt="instagram">
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <img src="resources/img/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
