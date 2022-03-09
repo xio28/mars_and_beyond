@@ -1,0 +1,420 @@
+/*************************************************/
+/******************** GENERAL ********************/
+/*************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html, body {
+    overflow-x: hidden;
+    scrollbar-color: #F05454 #121212;
+    scrollbar-width: thin;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track-piece {
+    background-color: #F05454;
+}
+  
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #121212;
+}
+
+input, textarea {
+    color: var(--black);
+    font-family: montserrat-regular;
+    padding: 1vmin;
+}
+
+.content-title {
+    font-family: BebasNeue-Regular;
+    font-size: 6em;
+    padding-left: 20vmin;
+    text-align: left;
+    color: var(--black);
+}
+
+.iframe-responsive {
+    border: 0;
+}
+
+/*************************************************/
+/******************** COLORS *********************/
+/*************************************************/
+
+:root {
+    --white: #F5F5F5; /* rgb(245,245,245) */
+    --red: #F05454; /* rgb(240,84,84) */
+    --navy: #30475E; /* rgb(48,71,94) */
+    --black: #121212; /* rgb(18,18,18) */
+}
+
+
+/*************************************************/
+/********************** MAIN *********************/
+/*************************************************/
+
+#main {
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    background: var(--white);
+}
+
+#know-w {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#know-w blockquote {
+    width: 60%;
+    margin: 0 auto;
+    font-family: montserrat-semibold;
+    font-size: 5.6vmin;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 10px;
+}
+
+#know-w blockquote::before {
+    content: '\201C';
+    position: absolute;
+    font-family: montserrat-semibold;
+    font-size: 40vmin;
+    color: var(--red);
+    opacity: .5;
+    left: 0;
+    top: 45%;
+    transform: translate(0, -45%);
+    -webkit-transform: translate(0, -45%);
+    -moz-transform: translate(0, -45%);
+    -ms-transform: translate(0, -45%);
+    -o-transform: translate(0, -45%);
+}
+
+#know-w blockquote span {
+    color: var(--red);
+}
+
+#about-us {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#about-us .left-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    z-index: 2;
+    background-color: var(--navy);
+    border-right: 8px solid var(--white);
+    border-bottom: 8px solid var(--white);
+}
+
+#about-us .right-content {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    z-index: 2;
+    background-image: url(../resources/img/telescope.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-us .left-content h2 {
+    letter-spacing: 5px;
+    text-align: right;
+    padding: 0 10vmin 1vmin 0;
+    z-index: 4;
+}
+
+#about-us .left-content h4 {
+    text-align: right;
+    padding: 0 10vmin 10vmin 0;
+    color: var(--white);
+    z-index: 4;
+}
+
+#about-us .left-content p {
+    color: var(--white);
+    font-size: 1.7vmin;
+    line-height: 1.8em;
+    font-family: montserrat-regular;
+    text-align: right;
+    padding: 1vmin 10vmin;
+    z-index: 4;
+}
+
+#curiosity {
+    width: 100%;
+    min-height: 100vmin;
+    padding: 5vmin 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    background-color: var(--black);
+}
+
+#curiosity h2 {
+    padding-bottom: 5vmin;
+    width: 60%;
+}
+
+#curiosity .iframe-responsive {
+    aspect-ratio: 16/9;
+    width: 65%;
+}
+
+.section-title {
+    width: 100%;
+    font-family: BebasNeue-Regular;
+    text-align: center;
+    color: var(--red);
+    text-transform: uppercase;
+    font-size: 6vmin;
+}
+
+.subsection-title {
+    width: 100%;
+    font-family: BebasNeue-Regular;
+    letter-spacing: 8px;
+    color: var(--red);
+}
+
+#curiosity .solar-system {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#newsletter {
+    height: 50vh;
+    width: 100%;
+    background-image: url(../resources/img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#newsletter div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#newsletter h2 {
+    text-align: left;
+    width: 80%;
+    padding-left: 3vmin;
+}
+
+#newsletter p {
+    width: 80%;
+    color: var(--white);
+    font-size: 1.2em;
+    font-family: montserrat-regular;
+    text-align: left;
+    padding: 3vmin;
+    line-height: 1.5em;
+}
+
+#newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3vmin;
+}
+
+#newsletter input[type="email"] {
+    padding: 0 1em;
+    height: 5vh;
+    width: 50%;
+    border-radius: 2px;
+    border: 0;
+}
+
+#newsletter input[type="email"]::placeholder {
+    font-family: montserrat-regular;
+    font-size: 1.2em;
+    color: gray;
+} 
+
+#newsletter input[type="submit"] {
+    height: 5vh;
+    min-width: 20%;
+    background-color: var(--red);
+    font-family: BebasNeue-Regular;
+    font-size: 1.3em;
+    margin-left: .5vmin;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--red);
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+/*************************************************/
+/********************* FOOTER ********************/
+/*************************************************/
+
+.footer {
+    height: 20vh;
+    background-color: var(--black);
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.rights p, a {
+    font-size: 1.2em;
+    color: var(--white);
+    font-family: montserrat-semibold;
+    display: inline-block;
+    padding: 2vmin;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.social-media img {
+    height: 6vmin;
+    padding: 1vmin;
+    transform: rotate(0);
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.social-media a {
+    padding: 0;
+}
+
+.rights a:hover {
+    opacity: .9;
+    text-shadow: 0 0 4px var(--red);
+    color: var(--red);
+}
+
+.social-media img:hover {
+    transform: rotate(360deg);
+}
+
+
+/*************************************************/
+/******************* KEYFRAMES *******************/
+/*************************************************/
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      -o-transform: scale(0.95);
+    }
+
+    50% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      -o-transform: scale(0.95);
+    }
+}
+
+
+/*************************************************/
+/***************** MEDIA QUERIES *****************/
+/*************************************************/
+
+@media (max-width: 810px) {
+    
+    .content-title {
+        padding: 5vmin;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #main > div:not(:last-child) {
+        min-height: 100vh;
+    }
+
+    .left-content, .right-content {
+        width: 100% !important;
+        height: 50% !important;
+    }
+    
+    #newsletter div {
+        width: 100% !important;
+    }
+    
+    #newsletter p {
+        font-size: .8em !important;
+    }
+    
+    #newsletter input[type="submit"] {
+        font-size: 1em;
+    }
+    
+    .rights {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+

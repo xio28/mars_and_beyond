@@ -1,0 +1,93 @@
+/*************************************************/
+/********************* GENERAL *******************/
+/*************************************************/
+
+.iframe-responsive {
+    width: 100% !important;
+    aspect-ratio: 16/9;
+}
+
+/*************************************************/
+/********************* HEADER ********************/
+/*************************************************/
+
+.header {
+    height: 10vh !important;
+}
+
+.nav-dk li:nth-child(2) a {
+    color: var(--white);
+}
+
+.nav-dk li:nth-child(3) a {
+    color: var(--red);
+}
+
+/*************************************************/
+/******************** CONTENT ********************/
+/*************************************************/
+
+#main-blog {
+    background-color: rgb(245, 245, 245);
+}
+
+#media-content {
+    width: 70%;
+    padding: 8vmin 0;
+}
+
+.media {
+    width: 100%;
+    padding: 3vmin 10vmin 0 20vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video {
+    width: 32%;
+    min-height: 15vh;
+    margin: 2vmin 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.video p {
+    width: 100%;
+    padding: 1vmin;
+    text-align: center;
+    font-family: BebasNeue-Regular;
+    font-size: 1.3em;
+    color: var(--white);
+    border: 2px solid var(--navy);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    background-color: var(--navy);
+}
+
+
+/*************************************************/
+/***************** MEDIA QUERIES *****************/
+/*************************************************/
+
+@media (max-width: 810px) {
+
+    #media-content {
+        width: 100%;
+    }
+
+    .media {
+        padding: 2vmin;
+        justify-content: center;
+    }
+
+    .video {
+        width: 100%;
+    }
+}

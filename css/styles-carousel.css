@@ -1,0 +1,266 @@
+/*************************************************/
+/******************** CAROUSEL *******************/
+/*************************************************/
+
+.gallery-elements {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.arrow img {
+    width: 5vmin;
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: transform 1600ms;
+    -webkit-transition: transform 1600ms;
+    -moz-transition: transform 1600ms;
+    -ms-transition: transform 1600ms;
+    -o-transition: transform 1600ms;
+}
+
+.sld1 {
+    background-image: url(../resources/img/solarsystembeyond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+}
+
+.sld2 {
+    background-image: url(../resources/img/tomars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 100%;
+}
+
+.sld3 {
+    background-image: url(../resources/img/earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 200%;
+}
+
+.slider > div {
+    max-height: 70%;
+    width: 60%;
+    background-color: rgba(48, 71, 94, .8);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10vmin;
+    text-align: center;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.slider h2 {
+    text-align: center;
+    color: var(--red);
+    font-family: BebasNeue-Regular;
+    font-size: 3em;
+    letter-spacing: 5px;
+    line-height: 120%;
+    opacity: 0;
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+    -moz-transform: translateX(500px);
+    -ms-transform: translateX(500px);
+    -o-transform: translateX(500px);
+}
+
+.slider p {
+    text-align: center;
+    color: var(--white);
+    font-family: montserrat-regular;
+    opacity: 0;
+    padding: 3em 0;
+    line-height: 1.8em;
+    transform: translateX(-500px);
+    -webkit-transform: translateX(-500px);
+    -moz-transform: translateX(-500px);
+    -ms-transform: translateX(-500px);
+    -o-transform: translateX(-500px);
+}
+
+.slider a {
+    color: var(--white);
+    font-family: BebasNeue-Regular;
+    opacity: 0;
+    padding: 1.8vmin 3vmin;
+    font-size: 1.5em;
+    border-radius: 2px;
+    border: 2px solid var(--red);
+    background-color: var(--red);
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+    -moz-transform: translateX(500px);
+    -ms-transform: translateX(500px);
+    -o-transform: translateX(500px);
+}
+
+.slider a:hover {
+    color: var(--red);
+    background-color: var(--white);
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.slider h2, .slider p, .slider a {
+    -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+    transition: transform 800ms, opacity 800ms;
+    -webkit-transition-delay: 1s; /* Safari */
+    transition-delay: 1s;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    z-index: 55;
+}
+
+.arrow label {
+    z-index: 0;
+    display: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: #FFF;
+    cursor: pointer;
+    opacity: .2;
+}
+
+.arrow label:hover {
+    opacity: .5;
+}
+
+.right {
+    right: 1%;
+}
+
+.left {
+    left: 1%;
+}
+
+.sld-pagination {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.sld-pagination label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    margin: 0 2px;
+    border: 1px solid rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+.sld-rad-1:checked ~ .right .arrow-2, 
+.sld-rad-2:checked ~ .right .arrow-3,  
+.sld-rad-2:checked ~ .left .arrow-1, 
+.sld-rad-3:checked ~ .left .arrow-2 {
+    display: block;
+    z-index: 1;
+}
+
+.sld-rad-1:checked ~ .sld-pagination .pg-1, 
+.sld-rad-2:checked ~ .sld-pagination .pg-2, 
+.sld-rad-3:checked ~ .sld-pagination .pg-3 {
+    background: rgba(255,255,255,1);
+}
+
+.sld-rad-1:checked ~ .slider {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.sld-rad-2:checked ~ .slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+.sld-rad-3:checked ~ .slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+}
+
+.sld-rad-1:checked ~ .sld1 h2,  
+.sld-rad-2:checked ~ .sld2 h2,  
+.sld-rad-3:checked ~ .sld3 h2,  
+.sld-rad-1:checked ~ .sld1 p,  
+.sld-rad-2:checked ~ .sld2 p,  
+.sld-rad-3:checked ~ .sld3 p,  
+.sld-rad-1:checked ~ .sld1 a,  
+.sld-rad-2:checked ~ .sld2 a,  
+.sld-rad-3:checked ~ .sld3 a {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 810px) {
+
+    .slider > div {
+        padding: 2%;
+    }
+    
+    .slider h2 {
+        font-size: 2em;
+    }
+
+    .slider p {
+        font-size: .8em;
+    }
+
+    .slider a {
+        font-size: 1em;
+    }
+
+    .arrow label {
+        font-size: 35px;
+    }
+
+}

@@ -1,0 +1,137 @@
+
+/*************************************************/
+/********************* HEADER ********************/
+/*************************************************/
+
+#submenu-1 li a {
+    color: var(--white) !important;
+}
+
+/*************************************************/
+/******************** ARTICLE ********************/
+/*************************************************/
+
+figcaption, p, a, span {
+    font-family: montserrat-regular;
+}
+
+.article {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-article {
+    width: 70%;
+}
+
+.article h2, h4, h6 {
+    width: 100%;
+    text-align: left;
+}
+
+.article h2 {
+    font-family: BebasNeue-Regular;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+.article h4 {
+    font-family: BebasNeue-Regular;
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: var(--red);
+    padding-bottom: .8em;
+}
+
+.article h6 {
+    font-family: BebasNeue-Regular;
+    font-size: .8em;
+    letter-spacing: 5px;
+    color: var(--navy);
+}
+
+.article figure {
+    width: 100%;
+    text-align: center;
+    padding: 2vmin 0;
+}
+
+.article figcaption {
+    color: rgba(18, 18, 18, .5);
+    font-style: italic;
+    font-size: .8em;
+}
+
+.article img {
+    aspect-ratio: 16/16;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.article p {
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 1vmin 0;
+    line-height: 1.5em;
+}
+
+.article .sources {
+    width: 70%;
+    margin-top: 3vmin;
+}
+
+.article .sources-icons {
+    width: .8em;
+    margin-right: 1vmin;
+}
+
+.article .sources a {
+    color: var(--navy);
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 2px;
+    background-color: transparent;
+}
+
+.article .sources a:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.article .sources span {
+    color: var(--navy);
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+/*************************************************/
+/***************** MEDIA QUERIES *****************/
+/*************************************************/
+
+@media (max-width: 810px) {
+    
+    .article h2 {
+        font-size: 2em;
+    }
+    
+    .article h4 {
+        font-size: .8em;
+    }
+    
+    .article h6 {
+        font-size: .6em;
+    }
+
+    .article figcaption {
+        font-size: .6em;
+    }
+
+    .article p {
+        font-size: .8em;
+    }
+
+}

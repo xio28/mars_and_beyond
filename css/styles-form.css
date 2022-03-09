@@ -1,0 +1,320 @@
+/*************************************************/
+/********************* HEADER ********************/
+/*************************************************/
+
+.header {
+    height: 10vh !important;
+}
+
+.nav-dk li:nth-child(4) a {
+    color: var(--red);
+}
+
+
+/*************************************************/
+/********************** MAIN *********************/
+/*************************************************/
+
+#main-form {
+    background-color: var(--navy);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50vw;
+}
+
+fieldset {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-column-gap: 10px;
+}
+
+legend {
+    text-align: left;
+    font-size: 3em;
+    font-family: BebasNeue-Regular;
+    color: var(--red);
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+fieldset p {
+    text-align: left;
+    font-size: 1em;
+    font-family: BebasNeue-Regular;
+    color: var(--white);
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+input, textarea {
+    background-color: rgba(245, 245, 245, .1);
+    border: 1px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1vmin;
+    resize: none; /* Añadido después de entregar la web */
+}
+
+input {
+    height: 60px;
+}
+
+input, textarea {
+    margin: 1vmin 0;
+    max-width: 100%;
+    color: var(--white);
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: var(--red);
+    min-width: 7vw;
+    max-width: 20vw;
+    color: var(--white);
+    font-size: 1.5em;
+    font-family: BebasNeue-Regular;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+#terms {
+    padding: 2vmin 0 1vmin .5vmin;
+    font-size: 1.5vmin;
+    color: var(--white);
+    font-family: montserrat-regular;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+
+#terms:hover {
+    color: var(--red);
+}
+
+.privacy { /* Añadido después de entrega */
+    font-size: 1.2em;
+    font-family: montserrat-regular;
+    color: var(--white);
+    position: relative;
+    padding: 0;
+    margin: 2vmin;
+}
+
+.privacy::after {
+    /*Añadidodespuésdeentrega*/content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: rgba(240, 84, 84, .7);
+    transition: opacity .3s, transform .3s;
+    -webkit-transition: opacity .3s, transform .3s;
+    -moz-transition: opacity .3s, transform .3s;
+    -ms-transition: opacity .3s, transform .3s;
+    -o-transition: opacity .3s, transform .3s;
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.privacy:hover::after, .privacy:focus::after {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.g-col-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.g-col-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.g-col-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.g-row-1 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.g-row-2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.g-row-3 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.g-row-4 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.g-row-5 {
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+.g-row-6 {
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.g-row-7 {
+    grid-row-start: 7;
+    grid-row-end: 7;
+}
+
+
+::placeholder {
+    font-family: montserrat-regular;
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+
+/*************************************************/
+/***************** MEDIA QUERIES *****************/
+/*************************************************/
+
+@media (max-width: 810px) {
+
+    .nav-dk {
+        display: none;
+    }
+
+    form {
+        width: auto;
+    }
+    
+    fieldset {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-column-gap: 10px;
+    }
+
+    legend {
+        font-size: 2em;
+    }
+
+    fieldset p {
+        font-size: .6em;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    input[type="submit"] {
+        font-size: .8em;
+    }
+    
+    .g-col-tb-1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    .g-row-tb-1 {
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    
+    .g-row-tb-2 {
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    
+    .g-row-tb-3 {
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    
+    .g-row-tb-4 {
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    
+    .g-row-tb-5 {
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    
+    .g-row-tb-6 {
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    
+    .g-row-tb-7 {
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+
+    .label-terms {
+        padding-top: 2vmin;
+    }
+    
+    ::placeholder {
+        font-family: montserrat-semibold;
+        font-size: 1.8vmin;
+        color: var(--white);
+    }
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/index-menu.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/styles-form.css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../resources/img/favicon.ico">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="menu-small">
+                    <a class="icon" href="../index.html">
+                        <img class="logo" src="../resources/img/solar-system.png" alt="logo">
+                    </a>
+                    <ul class="nav-dk">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a id="dk-dropdown" href="#">Explora</a>
+                            <ul id="submenu-1">
+                                <li><a href="solarsystem.html">Sistema Solar</a></li>
+                                <li><a href="tomars.html">Humanos en Marte</a></li>
+                                <li><a href="earth.html">La Tierra</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                    <div class="nav-dv">
+                        <input class="ck-dv" type="checkbox" />
+                        <div class="ham-menu"></div>
+                        <div id="dv-hidden-menu">
+                            <ul class="nav-dv-menu">
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li class="submenu-arrow"><input class="submenu-ckb" type="checkbox"><a id="dv-dropdown" href="#">Explora</a><span class="arrow-img"></span>
+                                    <ul id="submenu-2">
+                                        <li><a href="solarsystem.html">Sistema Solar</a></li>
+                                        <li><a href="tomars.html">Humanos en Marte</a></li>
+                                        <li><a href="earth.html">La Tierra</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-form">
+                <form action="https://www.iesanaluisabenitez.org" method="POST">
+                    <fieldset>
+                        <legend class="g-row-1 g-col-1">Contáctanos</legend>
+                        <p class="g-row-2 g-col-1">Cuéntanos qué necesitas</p>
+                        <input class="g-row-3 g-col-2 g-row-tb-1 g-col-tb-1" type="text" id="name" name="name" placeholder="Nombre" required>
+                        <input class="g-row-3 g-col-3 g-row-tb-2 g-col-tb-1" type="text" id="surname" name="surname" placeholder="Apellidos">
+                        <input class="g-row-4 g-col-2 g-row-tb-3 g-col-tb-1" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="g-row-4 g-col-3 g-row-tb-4 g-col-tb-1" type="tel" id="phone" name="phone" placeholder="Teléfono">
+                        <textarea class="g-row-5 g-col-1 g-row-tb-5 " rows="10" placeholder="Mensaje" required></textarea>
+                        <label class="g-row-6 g-col-1 g-row-tb-6 label-terms" for="terms">
+                            <input type="checkbox" id="terms" required>
+                            <a class="privacy" href="#" target="_blank">Aceptar política de privacidad.</a>
+                        </label>
+                        <input class="g-row-7 g-col-1 g-row-tb-7" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="footer">
+                <div class="rights">
+                    <p>Copyright &copy; IES Ana Luisa Benítez 2022</p>
+                    <a target="_blank" href="#">Política de privacidad</a>
+                    <a target="_blank" href="#">Términos de uso</a>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://twitter.com/?lang=es">
+                        <img src="../resources/img/twitter.png" alt="twitter">
+                    </a>
+                    <a target="_blank" href="https://es-es.facebook.com/">
+                        <img src="../resources/img/facebook.png" alt="facebook">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/?hl=es">
+                        <img src="../resources/img/instagram.png" alt="instagram">
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <img src="../resources/img/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
