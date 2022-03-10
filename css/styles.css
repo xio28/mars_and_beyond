@@ -300,7 +300,7 @@ input, textarea {
 /*************************************************/
 
 .footer {
-    height: 20vh;
+    min-height: 20vh;
     background-color: var(--black);
     display: flex;
     flex-flow: column wrap;
@@ -380,7 +380,7 @@ input, textarea {
 /***************** MEDIA QUERIES *****************/
 /*************************************************/
 
-@media (max-width: 810px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1080px) {
     
     .content-title {
         padding: 5vmin;
